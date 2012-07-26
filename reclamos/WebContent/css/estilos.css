@@ -1,0 +1,43 @@
+/* CSS Document */
+.tablaDeEntrada{
+	position:absolute;
+	top:30%;
+	left:30%;
+	padding:0;
+	width:450px;
+}
+
+.inputText{
+	padding:0;
+}
+
+.inputText input{
+	border:inset 1px;
+ 	font-size: 0.6pc;
+ 	font-family:Verdana,Helvetica;
+	 font-weight:bold;
+ 	color:#006600;
+}
+
+.DPtext{
+	padding:10px;
+	font-size: 0.6pc;
+ 	font-family:Verdana,Helvetica;
+ 	font-weight:bold;
+ 	color:#006600;
+}
+
+.boton{
+	padding:10px;
+	font-size: 0.6pc;
+ 	font-family:Verdana,Helvetica;
+ 	font-weight:bold;
+ 	color:#006600;
+	}
+	
+.boton input{
+	font-size: 0.6pc;
+ 	font-family:Verdana,Helvetica;
+ 	font-weight:bold;
+ 	color:#006600;
+}

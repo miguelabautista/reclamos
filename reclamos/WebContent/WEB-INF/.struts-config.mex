@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/acceso.do" location="840,0" dimension="338,108" />
+  <StrutsActivity path="/index.do" location="60,330" dimension="324,108" />
+  <StrutsActivity path="/basicApplication.do" location="45,465" dimension="399,108" />
+  <StrutsActivity path="/home.do" location="870,270" dimension="355,108" />
+  <StrutsActivity path="/salir.do" location="180,15" dimension="342,108" />
+  <StrutsActivity path="/busqueda.do" location="1275,420" dimension="329,104" />
+  <StrutsActivity path="/generar.do" location="750,705" dimension="317,104" />
+  <StrutsActivity path="/inactividad.do" location="1380,795" dimension="333,104" />
+  <StrutsActivity path="index;6" location="-75,135" dimension="121,90" />
+  <StrutsActivity path="/web/acceso.jsp" location="540,60" dimension="149,54" />
+  <StrutsActivity path="/web/fueraServicio.jsp" location="585,330" dimension="150,100" />
+  <StrutsActivity path="/web/home.jsp" location="1290,45" dimension="150,100" />
+  <StrutsActivity path="/" location="-165,45" dimension="43,54" />
+  <StrutsActivity path="/web/busqueda.jsp" location="1425,615" dimension="150,100" />
+  <StrutsActivity path="/web/inactividad.jsp" location="1680,555" dimension="150,100" />
+  <StrutsActivity path="/web/home_body.jsp" location="1515,180" dimension="150,100" />
+  <StrutsActivity path="/index.jsp" location="-120,765" dimension="150,100" />
+  <StrutsActivity path="/layout/layoutAcceso.jsp" location="45,615" dimension="150,100" />
+  <StrutsActivity path="/web/acceso_body.jsp" location="675,150" dimension="150,100" />
+  <StrutsActivity path="/web/fueraServicio_body.jsp" location="810,420" dimension="150,100" />
+  <StrutsActivity path="/layout/layout.jsp" location="-135,600" dimension="150,100" />
+  <StrutsActivity path="/web/busqueda_body.jsp" location="1155,705" dimension="150,100" />
+  <StrutsActivity path="/web/inactividad_body.jsp" location="1755,240" dimension="150,100" />
+  <StrutsActivity path="/pdfjsp/bloqueado.jsp" location="1560,960" dimension="169,53" />
+  <StrutsActivity path="/borrar.do" location="1590,-15" dimension="305,104" />
+  <StrutsTransition id="/acceso.do,success,/home.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1047,108" />
+      <AbsolutePoint location="1047,270" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/borrar.do,success,/web/home.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1590,74" />
+      <AbsolutePoint location="1440,74" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/busqueda.do,failure,/web/home.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1425,420" />
+      <AbsolutePoint location="1425,145" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/index.do,fueraServicio,/web/fueraServicio.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="384,410" />
+      <AbsolutePoint location="585,410" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/inactividad.do,success,/web/inactividad.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1698,795" />
+      <AbsolutePoint location="1698,655" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/borrar.do,success,/web/inactividad.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1742,-15" />
+      <AbsolutePoint location="502,585" />
+      <AbsolutePoint location="1680,585" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/web/busqueda.jsp,null,/generar.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1425,635" />
+      <AbsolutePoint location="908,635" />
+      <AbsolutePoint location="908,705" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/generarBloqueado.do,failure,/salir.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="915,982" />
+      <AbsolutePoint location="459,982" />
+      <AbsolutePoint location="459,123" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/web/home.jsp,null,/busqueda.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1395,145" />
+      <AbsolutePoint location="1395,420" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/acceso.do,failure,/web/acceso.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="840,87" />
+      <AbsolutePoint location="689,87" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/web/acceso.jsp,null,/acceso.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="614,60" />
+      <AbsolutePoint location="614,45" />
+      <AbsolutePoint location="840,45" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/generar.do,failure,/web/busqueda.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="938,705" />
+      <AbsolutePoint location="938,665" />
+      <AbsolutePoint location="1425,665" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/index.do,success,/web/acceso.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="384,380" />
+      <AbsolutePoint location="570,380" />
+      <AbsolutePoint location="570,114" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="index;6,null,/index.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="46,180" />
+      <AbsolutePoint location="222,180" />
+      <AbsolutePoint location="222,330" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/borrar.do,success,/home.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1740,89" />
+      <AbsolutePoint location="1740,355" />
+      <AbsolutePoint location="1225,355" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/salir.do,success,/,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="180,72" />
+      <AbsolutePoint location="-122,72" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/busqueda.do,success,/web/busqueda.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1500,524" />
+      <AbsolutePoint location="1500,615" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/home.do,success,/web/home.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1225,324" />
+      <AbsolutePoint location="1365,324" />
+      <AbsolutePoint location="1365,145" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

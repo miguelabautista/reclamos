@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE form-validation PUBLIC 
+	"-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.3.0//EN" 
+		"http://jakarta.apache.org/commons/dtds/validator_1_3_0.dtd">
+
+<form-validation>
+	<formset >
+	
+		<form name="generarForm">
+			<field property="idDoc" depends="required">
+		        <arg key="busqueda.documento" />
+		    </field>		
+		</form>
+		<!-- 
+			Validar de la Clase LoginForm
+		 -->
+		<form name="accesoForm">
+			<field property="login" depends="required">
+				<arg key="acceso.login" />
+			</field>
+			<field property="password" depends="required">
+				<arg key="acceso.password" />
+			</field>
+		</form>
+		
+		<!-- 
+			Validar de la Clase BusquedaForm
+		 -->
+		<form name="busquedaForm">
+			<field property="numTarjeta" depends="mask">
+				<arg key="reclamos.numeroTarjeta" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>^[0-9]*$</var-value>
+				</var>
+			</field>
+			<field property="numAfiliado" depends="mask">
+				<arg key="reclamos.numeroAfiliado" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>^[0-9]*$</var-value>
+				</var>
+			</field>
+			<field property="numAutorizacion" depends="mask">
+				<arg key="reclamos.numeroAutorizacion" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>^[0-9]*$</var-value>
+				</var>
+			</field>
+			<field property="trace" depends="mask">
+				<arg key="reclamos.trace" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>^[0-9]*$</var-value>
+				</var>
+			</field>			
+			<!-- 
+			<field property="fechaTransaccion" depends="required">
+				<arg key="reclamos.fechaTransaccion" />
+			</field>
+			 -->
+			
+			<field property="montoTransaccion" depends="mask">
+				<arg key="reclamos.montoTransaccion" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>^[0-9,]*$</var-value>
+				</var>
+			</field>
+				
+			<field property="idFolder" depends="required">
+				<arg key="reclamos.banco" />
+			</field>
+		</form>
+	</formset>
+</form-validation>
